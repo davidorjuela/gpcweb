@@ -1,0 +1,293 @@
+*{
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+:root {
+    font-size: 12px;
+    --color1: #ffffff;
+    --color2: #ffff00;
+    --color3: #00ff00;
+    --color4: #0062ff;
+    --color5: #070523;
+    --color6: #800080;
+}
+.container{
+    overflow: hidden;
+}
+/************************************/
+html{
+    height: 100%;
+}
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("./images/fondo.jpg");
+}
+header{
+    color: var(--color6);
+    background-color: var(--color1);
+    padding: 1rem 0px;
+    border-bottom: 2px solid var(--color6);
+}
+main{
+    color: var(--color5);
+    min-height: 66vh;
+}
+footer{
+    color: var(--color1);
+    background-color: var(--color5);
+    font-size: 0.8rem;
+}
+#wiserclik a{
+    text-decoration: none;
+    color: var(--color2);
+}
+/****************************************/
+#logo{
+    border-radius: 50%;
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    padding: 27px;
+    background-color: #FFF;
+}
+#logo img{
+    width: 4rem;
+    height: 4.5rem;
+    margin-right: 0.5rem;
+}
+#titulo h1{
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+#titulo h2{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+/****************************************/
+
+main img{
+    width: 49%;
+    margin: 2rem 25%;
+}
+
+/****************************************/
+#contacto, #politicas{
+    margin: .5rem;
+}
+#whatsapp, #email, #politicas>div{
+    margin: .1rem;
+    padding: .1rem;
+}
+#whatsapp img{
+    width: .9rem;
+    height: .9rem;
+    margin-right: .4rem;
+}
+#direccion>p:first-child, #politicas p:first-child{
+    margin-right: .2rem;
+}
+/**************************************/
+nav{
+    background-color: var(--color4);
+    position: absolute;
+    visibility:hidden;
+    display: none;
+}
+nav>div{
+    background-color: var(--color4);
+}
+nav>div:first-child, nav>div:last-child{
+    border-top: 3px solid var(--color4);
+    border-bottom: 3px solid var(--color4);
+}
+.nav-item{
+    min-width: 200px;
+}
+.nav-item, #inicio, #close-nav{
+    color: var(--color1);
+    background-color: var(--color5);
+    margin: 1px 0px;
+    padding: 5px 10px;
+}
+.nav-item, #inicio{
+    width: 100%;
+}
+.nav-item:hover, #inicio:hover, #close-nav:hover{
+    color: var(--color5);
+    background-color: var(--color1);
+    cursor: pointer;
+}
+#close-nav{
+    width:  3rem;
+    text-align: center;
+    border-left: 3px solid var(--color4);
+}
+/**************************************/
+#busqueda{
+    align-self: center;
+    margin: 0.5rem;
+    padding: 0.1rem;
+    border: 1px solid #555;
+    background-color: var(--color1);
+}
+#busqueda input{
+    font-size: 0.9rem;
+    border: 1px solid #555;
+    padding: 2px;
+    margin: 2px;
+}
+#busqueda input:focus{
+    outline: none;
+    border: 2px solid var(--color4);
+}
+#menu-button{
+    font-size: 0.9rem;
+    color: var(--color1);
+    border: 1px solid var(--color4);
+    background-color: var(--color5);
+    padding: 3px 5px;
+}
+/**************************************/
+
+#productos-content{
+    padding: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 20px;
+}
+#productos-title h2{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px auto 0px auto;
+    background-color: var(--color1);
+    border-bottom: 2px solid var(--color3);
+}
+.card{
+    background-color: var(--color1);
+    width: 100%;
+    box-shadow: 0px 0px 15px #336;
+    overflow: hidden;
+}
+.card-image{
+    max-width: 240px;
+    max-height: 180px;
+    overflow: hidden;
+    text-align: center;
+    border: 2px solid var(--color5);
+}
+.card-image img{
+    max-width: 240px;
+    max-height: 180px;
+    height: auto;
+    width: 100%;
+}
+.card-title h3{
+    font-size: 1rem;
+    font-weight: normal;
+    text-align: center;
+    color: var(--color1);
+    background-color: var(--color5);
+    padding: 0.5rem 0.1rem;
+    margin-bottom: 0.3rem;
+}
+.prod-marca, .prod-presentacion, .prod-disponible, .prod-precio{
+    font-size: 0.9rem;
+    padding: 0px 0.1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color5);
+}
+.prod-date{
+    font-size: 0.7rem;
+    color: #444;
+    align-self: flex-end;
+    margin: .3rem .1rem 0px 0px;
+}
+/**************************************/
+
+#listaprecios-title h2{
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 20px auto 0px auto;
+    background-color: var(--color1);
+    border-bottom: 2px solid var(--color3);
+}
+/**************************************/
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    :root {
+        font-size: 14px;
+    }
+    #productos-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #contacto{
+        order: 3;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    :root {
+        font-size: 15px;
+    }
+    #content>div:first-child{
+        justify-content: center;
+    }
+    #productos-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #contacto{
+        order: 3;
+    }
+}
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    :root {
+        font-size: 16px;
+    }
+    #content>div:first-child{
+        justify-content: center;
+    }
+    #productos-content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #contacto{
+        order: 3;
+    }
+    nav{
+        position: relative;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-button, #close-nav{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1201px){
+    :root {
+        font-size: 18px;
+    }
+    #content>div:first-child{
+        justify-content: center;
+    }
+    #productos-content{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    #contacto{
+        order: 3;
+    }
+    nav{
+        position: relative;
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    #menu-button, #close-nav{
+        display: none;
+    }
+}
+
