@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    font-size: 12px;
+    font-size: 2.8vmin;
     --color1: #ffffff;
     --color2: #ffff00;
     --color3: #00ff00;
@@ -19,11 +19,13 @@
 /************************************/
 html{
     height: 100%;
+    font-size: 2.8vmin;
 }
 body{
     min-height: 100vh;
     width: 100%;
     background-image: url("./images/fondo.jpg");
+    background-size: cover;
 }
 header{
     color: var(--color6);
@@ -33,30 +35,33 @@ header{
 }
 main{
     color: var(--color5);
-    min-height: 66vh;
+    height: 100%;
 }
 footer{
     color: var(--color1);
     background-color: var(--color5);
+    font-size: 1rem;
+}
+#wiserclick {
     font-size: 0.8rem;
 }
-#wiserclik a{
+#wiserclick a{
     text-decoration: none;
     color: var(--color2);
 }
 /****************************************/
 #logo{
     border-radius: 50%;
+    border: 1px solid var(--color6);
     position: fixed;
-    top: -20px;
-    left: -20px;
-    padding: 27px;
+    top: -.7rem;
+    left: -.7rem;
+    padding: 1rem;
     background-color: #FFF;
 }
 #logo img{
-    width: 4rem;
-    height: 4.5rem;
-    margin-right: 0.5rem;
+    width: 3rem;
+    height: 3.4rem;
 }
 #titulo h1{
     font-family: 'Lato', sans-serif;
@@ -65,13 +70,14 @@ footer{
 }
 #titulo h2{
     font-family: 'PT Serif', serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 /****************************************/
 
 main img{
-    width: 49%;
-    margin: 2rem 25%;
+    width: 100%;
+    max-width: 600px;
+    margin: 1rem auto;
 }
 
 /****************************************/
@@ -220,9 +226,6 @@ nav>div:first-child, nav>div:last-child{
 }
 /**************************************/
 @media only screen and (min-width: 577px) and (max-width: 768px) {
-    :root {
-        font-size: 14px;
-    }
     #productos-content{
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -231,9 +234,6 @@ nav>div:first-child, nav>div:last-child{
     }
 }
 @media only screen and (min-width: 769px) and (max-width: 992px) {
-    :root {
-        font-size: 15px;
-    }
     #content>div:first-child{
         justify-content: center;
     }
@@ -245,9 +245,6 @@ nav>div:first-child, nav>div:last-child{
     }
 }
 @media only screen and (min-width: 993px) and (max-width: 1200px) {
-    :root {
-        font-size: 16px;
-    }
     #content>div:first-child{
         justify-content: center;
     }
@@ -268,9 +265,6 @@ nav>div:first-child, nav>div:last-child{
     }
 }
 @media only screen and (min-width: 1201px){
-    :root {
-        font-size: 18px;
-    }
     #content>div:first-child{
         justify-content: center;
     }
