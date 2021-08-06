@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root {
-    font-size: 2.8vmin;
+    font-size: 3vmin;
     --color1: #ffffff;
     --color2: #ffff00;
     --color3: #00ff00;
@@ -19,7 +19,6 @@
 /************************************/
 html{
     height: 100%;
-    font-size: 2.8vmin;
 }
 body{
     min-height: 100vh;
@@ -65,7 +64,7 @@ footer{
 }
 #titulo h1{
     font-family: 'Lato', sans-serif;
-    font-size: 2rem;
+    font-size: 1.9rem;
     text-align: center;
 }
 #titulo h2{
