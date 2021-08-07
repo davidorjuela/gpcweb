@@ -13,7 +13,7 @@ window.onload = function (){
         }
     }
 
-    logo.onclick = function(){
+    logo.addEventListener('click', () => {
         window.scrollTo(0, 0);
-    }
+    });
 }
