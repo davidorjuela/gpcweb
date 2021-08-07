@@ -12,4 +12,8 @@ window.onload = function (){
             logo.style.left= '-0';
         }
     }
+
+    logo.onclick = function(){
+        window.scrollTo(0, 0);
+    }
 }
