@@ -1,12 +1,12 @@
 window.onload = function (){
     let logo = document.getElementById("logo");
     window.onscroll = function() {
-        if (window.scrollY>110){
+        if (window.scrollY>70){
         logo.style.position= 'fixed';
-        logo.style.top= '-0.7rem';
-        logo.style.left= '-0.7rem';
+        logo.style.top= '-.7rem';
+        logo.style.left= '-1.2rem';
         }
-        else if(window.scrollY<10){
+        else if(window.scrollY<20){
             logo.style.position= 'relative';
             logo.style.top= '0';
             logo.style.left= '-0';
