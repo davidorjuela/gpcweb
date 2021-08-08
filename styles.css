@@ -25,6 +25,7 @@ body{
     width: 100%;
     background-image: url("./images/fondo.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }
 header{
     color: var(--color6);

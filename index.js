@@ -14,6 +14,10 @@ window.onload = function (){
     }
 
     logo.addEventListener('click', () => {
-        window.scrollTo(0, 0);
+        const myInterval = setInterval(() => {
+            window.scrollTo(0, window.scrollY/1.1);
+            if(window.scrollY<1){clearInterval(myInterval);}
+        }, 15);
     });
 }
+scrollY
